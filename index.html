@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countries Explorer</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Countries Explorer</h1>
+        
+        <div class="search-container">
+            <input type="text" id="countryInput" placeholder="Enter a country name...">
+            <button id="searchButton">Search</button>
+        </div>
+        
+        <div class="filter-container">
+            <label for="regionFilter">Filter by Region:</label>
+            <select id="regionFilter">
+                <option value="">All Regions</option>
+                <option value="Africa">Africa</option>
+                <option value="Americas">Americas</option>
+                <option value="Asia">Asia</option>
+                <option value="Europe">Europe</option>
+                <option value="Oceania">Oceania</option>
+            </select>
+        </div>
+        
+        <div id="loading" class="hidden">Loading countries...</div>
+        
+        <div id="errorMessage" class="hidden error"></div>
+        
+        <div id="countryDetails" class="hidden">
+            <div class="country-flag">
+                <img id="countryFlag" src="" alt="Country Flag">
+            </div>
+            
+            <div class="country-info">
+                <h2 id="countryName"></h2>
+                <p><strong>Capital:</strong> <span id="countryCapital"></span></p>
+                <p><strong>Region:</strong> <span id="countryRegion"></span></p>
+                <p><strong>Population:</strong> <span id="countryPopulation"></span></p>
+                <p><strong>Languages:</strong> <span id="countryLanguages"></span></p>
+                <p><strong>Currencies:</strong> <span id="countryCurrencies"></span></p>
+                <p><strong>Borders:</strong> <span id="countryBorders"></span></p>
+            </div>
+        </div>
+        
+        <div id="countriesList" class="countries-grid"></div>
+        
+        <div id="notFound" class="hidden">
+            <p>No countries found with that name. Please try again.</p>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
