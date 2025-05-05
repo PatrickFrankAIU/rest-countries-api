@@ -3,6 +3,6 @@
 ## Student repository for exercises and testing.    
 
 Pages Hosting URL: 
-
+https://patrickfrankaiu.github.io/rest-countries-api/
 
 Patrick Frank, Instructor
